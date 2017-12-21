@@ -24,6 +24,7 @@ public class ReverseString {
 
     public static void main(String[] args) {
 
+        //System.out.println(reverse(args[0]));  When running the file to send the input as an argument
         System.out.println(reverse("abc"));
     }
 
