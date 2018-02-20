@@ -8,7 +8,7 @@ public class VipCustomer {
     public String email;
 
     public VipCustomer() {
-        this("default vip name", 100.0, "defaultvip@gmail.com");
+        this("default vip name", 100.0);
 
     }
 
