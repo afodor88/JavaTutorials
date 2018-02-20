@@ -18,12 +18,19 @@ public class Main {
 
         VipCustomer person1 = new VipCustomer();
         System.out.println(person1.getName());
+        System.out.println(person1.getCreditLimit());
+        System.out.println(person1.getEmail());
 
         VipCustomer person2 = new VipCustomer("Gheorghe", 1000);
         System.out.println(person2.getName());
+        System.out.println(person2.getCreditLimit());
+        System.out.println(person2.getEmail());
 
         VipCustomer person3 = new VipCustomer("Ilie", 20, "ilie@gmail.com");
         System.out.println(person3.getName());
+        System.out.println(person3.getCreditLimit());
+        System.out.println(person3.getEmail());
+
 
 
     }
