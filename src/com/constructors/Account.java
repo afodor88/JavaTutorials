@@ -9,9 +9,14 @@ public class Account {
     public String phone;
 
     public Account() {
-        this("0000", 1.0, "Default name", "Default email", "0723999999");
+        this("Default name", "Default email", "0723999999");
         System.out.println("default constructor called");
 
+    }
+
+    public Account(String name, String email, String phone) {
+        this("1234", 1.0, name, email, phone);
+        System.out.println("2nd constructor called");
     }
 
 
@@ -25,10 +30,6 @@ public class Account {
         System.out.println("constructor with parameters called");
     }
 
-
-    public Account(String name, String email, String phone) {
-        this("1234", 1.0, name, email, phone);
-    }
 
 
     public void deposit(double amount) {
