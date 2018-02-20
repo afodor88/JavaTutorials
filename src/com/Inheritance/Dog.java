@@ -1,4 +1,4 @@
-package com.inheritance;
+package com.Inheritance;
 
 public class Dog extends Animal {
 
@@ -26,6 +26,7 @@ public class Dog extends Animal {
         System.out.println("Dog.eat() called");
         chew();
         super.eat();
+
     }
 
     public void walk() {
