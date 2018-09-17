@@ -41,8 +41,8 @@ public class AreSame {
         if (a.length != b.length) return false;
 
 
-        a = Arrays.stream(a).map(x -> x * x).sorted().toArray();
-        b = Arrays.stream(b).sorted().toArray();
+        int[] sortedA = Arrays.stream(a).map(x -> x * x).sorted().toArray();
+        int[] sortedB = Arrays.stream(b).sorted().toArray();
 
 
         int foundCount = 0;
@@ -50,10 +50,10 @@ public class AreSame {
 
         for (int i = 0; i < b.length; i++) {
 
-            if (a[i] == b[i]) {
+            if (sortedA[i] == sortedB[i]) {
                 foundCount++;
                 System.out.println("Found " + foundCount + " items.");
-                System.out.println("Square of " + a[i] + " is " + a[i] + " which is found in " + b[i]);
+                System.out.println("Square of " + sortedA[i] + " is " + sortedA[i] + " which is found in " + sortedB[i]);
 
             } else {
                 return false;
@@ -64,6 +64,8 @@ public class AreSame {
 
 
         return true;
+
+//        return Arrays.equals(sortedA, sortedB);
 
     }
 
